@@ -7,6 +7,7 @@ public class CostAdjustment {
         }
 
         double scalingFactor = 1 + (urgencyLevel / 10.0);
+        
         for (int i = 0; i < costMatrix.length; i++) {
             for (int j = 0; j < costMatrix[i].length; j++) {
                 costMatrix[i][j] *= scalingFactor;
